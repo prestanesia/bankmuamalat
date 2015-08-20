@@ -35,7 +35,7 @@ $_MODULE['<{bankmuamalat}prestashop>payment_execution_85d5b964eef8cded9a8968a340
 $_MODULE['<{bankmuamalat}prestashop>payment_execution_edd87c9059d88fea45c0bd6384ce92b9'] = 'Konfirmasi pembelian Anda dengan klik pada tombol \"Konfirmasi pembelian\".';
 $_MODULE['<{bankmuamalat}prestashop>payment_execution_46b9e3665f187c739c55983f757ccda0'] = 'Konfirmasi pembelian';
 $_MODULE['<{bankmuamalat}prestashop>payment_execution_569fd05bdafa1712c4f6be5b153b8418'] = 'Cara pembayaran lainnya';
-$_MODULE['<{bankmuamalat}prestashop>infos_ff872eb19580e60fc8f19098294c7c84'] = 'Modul untuk menerima penbayaran melalui Bank Muamalat.';
+$_MODULE['<{bankmuamalat}prestashop>infos_ff872eb19580e60fc8f19098294c7c84'] = 'Modul untuk menerima pembayaranran melalui Bank Muamalat.';
 $_MODULE['<{bankmuamalat}prestashop>infos_20293ef532ebb47641f7d85cbc990dbd'] = 'Jika pelanggan memilih membayar menggunakan Bank Muamalat, status pembelian akan berubah menjadi \'Menunggu pembayaran via Bank Muamalat\'';
 $_MODULE['<{bankmuamalat}prestashop>infos_eb0845591f30a6b74ba79a130ee3ec44'] = 'Dan jika pembayaran telah diterima, konfirmasi pembayaran harus dilakukan secara manual.';
 $_MODULE['<{bankmuamalat}prestashop>payment_a8725e4a11c31d8db6e78eb12e024083'] = 'Bayar melalui Bank Muamalat';
