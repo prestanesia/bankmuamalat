@@ -2,7 +2,7 @@
 <module>
 	<name>bankmuamalat</name>
 	<displayName><![CDATA[Bank Muamalat]]></displayName>
-	<version><![CDATA[1.1.0]]></version>
+	<version><![CDATA[1.1.1]]></version>
 	<description><![CDATA[Accept payments for your products via Bank Muamalat transfer.]]></description>
 	<author><![CDATA[Prestanesia]]></author>
 	<tab><![CDATA[payments_gateways]]></tab>
