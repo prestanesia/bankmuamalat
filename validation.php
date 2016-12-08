@@ -34,9 +34,9 @@ include(dirname(__FILE__).'/../../init.php');
 
 $context = Context::getContext();
 $cart = $context->cart;
-$bankwire = Module::getInstanceByName('bankmuamalat');
+$bankmuamalat = Module::getInstanceByName('bankmuamalat');
 
-if ($cart->id_customer == 0 or $cart->id_address_delivery == 0 or $cart->id_address_invoice == 0 or !$bankwire->active) {
+if ($cart->id_customer == 0 or $cart->id_address_delivery == 0 or $cart->id_address_invoice == 0 or !$bankmuamalat->active) {
     Tools::redirect('index.php?controller=order&step=1');
 }
 
@@ -49,7 +49,7 @@ foreach (Module::getPaymentModules() as $module) {
     }
 }
 if (!$authorized) {
-    die($bankwire->l('This payment method is not available.', 'validation'));
+    die($bankmuamalat->getTranslator()->trans('This payment method is not available.', array(), 'Modules.BankMuamalat.Shop'));
 }
 
 $customer = new Customer((int)$cart->id_customer);
@@ -61,7 +61,7 @@ if (!Validate::isLoadedObject($customer)) {
 $currency = $context->currency;
 $total = (float)($cart->getOrderTotal(true, Cart::BOTH));
 
-$bankwire->validateOrder($cart->id, Configuration::get('PS_OS_BANKMUAMALAT'), $total, $bankwire->displayName, null, array(), (int)$currency->id, false, $customer->secure_key);
+$bankmuamalat->validateOrder($cart->id, Configuration::get('PS_OS_BANKMUAMALAT'), $total, $bankmuamalat->displayName, null, array(), (int)$currency->id, false, $customer->secure_key);
 
-$order = new Order($bankwire->currentOrder);
-Tools::redirect('index.php?controller=order-confirmation&id_cart='.$cart->id.'&id_module='.$bankwire->id.'&id_order='.$bankwire->currentOrder.'&key='.$customer->secure_key);
+$order = new Order($bankmuamalat->currentOrder);
+Tools::redirect('index.php?controller=order-confirmation&id_cart='.$cart->id.'&id_module='.$bankmuamalat->id.'&id_order='.$bankmuamalat->currentOrder.'&key='.$customer->secure_key);

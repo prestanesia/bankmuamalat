@@ -24,8 +24,8 @@
 *}
 
 <div class="alert alert-info">
-<img src="../modules/bankmuamalat/bankwire.jpg" style="float:left; margin-right:15px;" >
-<p><strong>{l s="This module allows you to accept secure payments by Bank Muamalat." mod='bankmuamalat'}</strong></p>
-<p>{l s="If the client chooses to pay by Bank Muamalat, the order's status will change to 'Awaiting Bank Muamalat Payment'" mod='bankmuamalat'}</p>
-<p>{l s="That said, you must manually confirm the order upon receiving the Bank Muamalat payment." mod='bankmuamalat'}</p>
+<img src="../modules/bankmuamalat/logo.png" style="float:left; margin-right:15px;" height="60">
+<p><strong>{l s="This module allows you to accept secure payments by Bank Muamalat." d='Modules.BankMuamalat.Admin'}</strong></p>
+<p>{l s="If the client chooses to pay by Bank Muamalat, the order's status will change to 'Awaiting Bank Muamalat Payment.'" d='Modules.BankMuamalat.Admin'}</p>
+<p>{l s="That said, you must manually confirm the order upon receiving the Bank Muamalat." d='Modules.BankMuamalat.Admin'}</p>
 </div>

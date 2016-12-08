@@ -23,9 +23,14 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
-<p class="payment_module">
-	<a href="{$link->getModuleLink('bankmuamalat', 'payment')|escape:'html'}" title="{l s='Pay by Bank Muamalat' d='Modules.BankMuamalat.Shop'}">
-		<img src="{$this_path_bw}logo.png" alt="{l s='Pay by Bank Muamalat' d='Modules.BankMuamalat.Shop'}"/>
-		{l s='Pay by Bank Muamalat' d='Modules.BankMuamalat.Shop'}&nbsp;<span>{l s='(order processing will be longer)' d='Modules.BankMuamalat.Shop'}</span>
-	</a>
-</p>
+
+<dl>
+    <dt>{l s='Amount' mod='bankmuamalat'}</dt>
+    <dd>{$total}</dd>
+    <dt>{l s='Name of account owner' mod='bankmuamalat'}</dt>
+    <dd>{$bankmuamalatOwner}</dd>
+    <dt>{l s='Please include these details' mod='bankmuamalat'}</dt>
+    <dd>{$bankmuamalatDetails}</dd>
+    <dt>{l s='Bank name' mod='bankmuamalat'}</dt>
+    <dd>{$bankmuamalatAddress nofilter}</dd>
+</dl>
